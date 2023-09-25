@@ -3286,6 +3286,7 @@ input::-moz-focus-inner {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: .4em;
+  position: relative;
 }
 
 .s-header__nav a {
@@ -3302,6 +3303,26 @@ input::-moz-focus-inner {
   margin: 0 1rem;
 }
 
+.s-header__subnav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #0f1011;
+  margin: 0px;
+}
+
+.s-header__subnav li a {
+  padding: 5px 10px;
+  height: auto;
+}
+
+.s-header__subnav li {
+  height: auto;
+}
+
+.s-header__nav li:hover .s-header__subnav {
+  display: flex;
+}
 
 /* -------------------------------------------------------------------
  * ## mobile menu toggle
